@@ -11,7 +11,7 @@ function App() {
       <Contact_Us_Map />
       <Contact_Us_Accordion /> */}
       <Blog_Single_Blog />
-      {/* <Latest_Blogs /> */}
+      <Latest_Blogs />
     </div>
   );
 }
