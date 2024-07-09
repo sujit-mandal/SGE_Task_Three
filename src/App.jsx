@@ -7,11 +7,11 @@ import Latest_Blogs from "./Component/Latest_Blogs";
 function App() {
   return (
     <div>
-      <Contact_Us_Form />
+      {/* <Contact_Us_Form />
       <Contact_Us_Map />
-      <Contact_Us_Accordion />
+      <Contact_Us_Accordion /> */}
       <Blog_Single_Blog />
-      <Latest_Blogs />
+      {/* <Latest_Blogs /> */}
     </div>
   );
 }

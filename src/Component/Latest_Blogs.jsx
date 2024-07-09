@@ -8,9 +8,9 @@ const Latest_Blogs = () => {
       .then((data) => setData(data));
   }, []);
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-screen-xl mx-auto sm:px-3">
       <h4 className="text-[28px] font-semibold">Latest Blogs</h4>
-      <div className="grid grid-cols-3 gap-x-7 gap-y-12 my-10">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-x-7 gap-y-12 my-10">
         {data.slice(0, 3).map((item) => (
           <div key={item.id} className="group">
             <div className="shadow-xl rounded-[16px] scale-right-bottom">

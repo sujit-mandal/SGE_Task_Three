@@ -11,8 +11,8 @@ const Blog_Single_Blog = () => {
       .then((data) => setData(data));
   }, []);
   return (
-    <div className="max-w-screen-xl mx-auto grid grid-cols-4 my-5 bg-[#FFF]">
-      <div>
+    <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 my-5 bg-[#FFF]">
+      <div className="hidden md:block">
         <div className="flex items-center gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,9 +57,9 @@ const Blog_Single_Blog = () => {
         </ul>
       </div>
       <div className="col-span-3">
-        <div className="grid grid-cols-3">
-          <h3 className="text-[28px] font-semibold">All Blogs</h3>
-          <div className="flex items-center col-span-2  relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 px-3 lg:px-0">
+          <h3 className="text-[28px] pb-5 font-semibold">All Blogs</h3>
+          <div className="flex items-center col-span-2 relative">
             <input
               className="bg-[#FAFAFA] text-gray-700 w-[80%] py-[11px] px-2 border-[1px] border-gray-300 rounded-l-full"
               type="text"
@@ -85,7 +85,7 @@ const Blog_Single_Blog = () => {
             </svg>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-x-7 gap-y-12 my-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-0 md:gap-x-7 gap-y-12 my-10 px-3 lg:px-0">
           {data.map((item) => (
             <div key={item.id} className="group">
               <div className="shadow-xl rounded-[16px] scale-right-bottom">
@@ -108,7 +108,7 @@ const Blog_Single_Blog = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center mt-5">
+        <div className="hidden md:flex justify-center mt-5">
           <ol className="flex items-center gap-5 font-semibold">
             <li className="opacity-50">
               <GoArrowLeft />
